@@ -1,10 +1,26 @@
 class Surgeon {
     constructor(name, department) {
-      this.name = name;
-      this.department = department;
+      this._name = name;
+      this._department = department;
+      this._remainingVacationDays = 20;
+    }
+    get name() {
+      return this._name;
+    }
+    get department() {
+      return this._department;
+    }
+    get remainingVacationDays() {
+      return this._remainingVacationDays;
+    }
+    takeVacationDays(daysOff) {
+      this._remainingVacationDays = this._remainingVacationDays - daysOff;
     }
   }
+  
   const surgeonCurry = new Surgeon('Curry', 'Cardiovascular');
   const surgeonDurant = new Surgeon('Durant', 'Orthopedics');
+  console.log(surgeonCurry.name);
   console.log(surgeonCurry);
-  console.log(surgeonDurant);
+  surgeonCurry.takeVacationDays(5);
+  console.log(surgeonCurry.remainingVacationDays);
