@@ -3,4 +3,8 @@ class Surgeon {
       this.name = name;
       this.department = department;
     }
-};
+  }
+  const surgeonCurry = new Surgeon('Curry', 'Cardiovascular');
+  const surgeonDurant = new Surgeon('Durant', 'Orthopedics');
+  console.log(surgeonCurry);
+  console.log(surgeonDurant);
