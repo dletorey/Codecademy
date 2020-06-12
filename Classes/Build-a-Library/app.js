@@ -61,3 +61,5 @@ console.log(historyOfEverything);
 console.log(historyOfEverything.title);
 console.log(historyOfEverything.author);
 console.log(historyOfEverything.pages);
+historyOfEverything.toggleCheckOutStatus();
+console.log(historyOfEverything);
