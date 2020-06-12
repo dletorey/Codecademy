@@ -51,8 +51,9 @@ class School {
     }
     get sportsTeams() {
       for (let i = 0; i < this._sportsTeams.length; i++) {
-        console.log(this._sportsTeams[0]);
-      };
+        console.log(i);
+        console.log(this._sportsTeams[i]);
+      }; 
     }
   }
   
@@ -61,3 +62,6 @@ class School {
   lorraineHansbury.quickFacts();
   const subTeachers = ['Jamal Crawford', 'Lou Williams', 'J. R. Smith', 'James Harden', 'Jason Terry', 'Manu Ginobli'];
   console.log(School.pickSubstituteTeacher(subTeachers));
+  
+  const alSmith = new SecondarySchool('Al E. Smith', 415, ['Baseball', 'Basketball', 'Volleyball', 'Track and Field']);
+  console.log(alSmith);
