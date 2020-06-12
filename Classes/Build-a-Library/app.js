@@ -4,13 +4,13 @@ class Media {
       this._isCheckedOut = false;
       this.ratings = [];
     }
-    get title {
+    get title() {
       return this._title;
     }
-    get isCheckedOut {
+    get isCheckedOut() {
       return this._isCheckedOut;
     }
-    get ratings {
+    get ratings() {
       return this._ratings
     }
     set isCheckedOut(checkOut) {
@@ -23,5 +23,8 @@ class Media {
       let ratingsTotal = this._ratings.reduce((currentSum, rating) => currentSum + rating, 0);
       const numOfRatings = this._ratings.length;
       return Math.round(ratingsTotal / numOfRatings * 10) / 10;
+    }
+    addRating(rating) {
+      this._ratings.push(rating);
     }
 }
