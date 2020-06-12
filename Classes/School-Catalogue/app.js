@@ -28,4 +28,14 @@ class School {
       const randomNum = Math.floor(Math.random * (numSubTeachers - 1));
       return substituteTeachers[randomNum];
     }
-}
+  }
+  
+  class PrimarySchool extends School {
+    constructor(name, numberOfStudents, pickupPolicy) {
+      super(name, 'primary', numberOfStudents);
+      this._pickupPolicy = pickupPolicy;
+    }
+    get pickupPolicy() {
+      return this._pickupPolicy;
+    }
+  }
