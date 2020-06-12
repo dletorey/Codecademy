@@ -39,3 +39,15 @@ class School {
       return this._pickupPolicy;
     }
   }
+  
+  class SecondarySchool extends School {
+    constructor(name, numberOfStudents, sportsTeams) {
+      super(name, 'secondary', numberOfStudents);
+      this._sportsTeams = sportsTeams;
+    }
+    get sportsTeams() {
+      for (let i = 0; i < this._sportsTeams.length; i++) {
+        console.log(this._sportsTeams[0]);
+      };
+    }
+}
