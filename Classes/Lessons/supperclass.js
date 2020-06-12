@@ -15,6 +15,10 @@ class HospitalEmployee {
     takeVacationDays(daysOff) {
       this._remainingVacationDays -= daysOff;
     }
+    static generatePassword() {
+      const password = Math.floor(Math.random()*10000);
+      return password;
+    }
   }
   
   class Nurse extends HospitalEmployee {
@@ -22,17 +26,19 @@ class HospitalEmployee {
       super(name);
       this._certifications = certifications;
     } 
+    
     get certifications() {
       return this._certifications;
     }
+    
     addCertification(newCertification) {
-      this._certifications.push(newCertification);
+      this.certifications.push(newCertification);
     }
-}
-
-const nurseOlynyk = new Nurse('Olynyk', ['Trauma','Pediatrics']);
-nurseOlynyk.takeVacationDays(5);
-console.log(nurseOlynyk.remainingVacationDays);
-nurseOlynyk.addCertification('Genetics');
-console.log(nurseOlynyk);
-console.log(nurseOlynyk.certifications);
+  }
+  
+  const nurseOlynyk = new Nurse('Olynyk', ['Trauma','Pediatrics']);
+  nurseOlynyk.takeVacationDays(5);
+  console.log(nurseOlynyk.remainingVacationDays);
+  nurseOlynyk.addCertification('Genetics');
+  console.log(nurseOlynyk.certifications);
+  console.log(HospitalEmployee.generatePassword());
