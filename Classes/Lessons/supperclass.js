@@ -15,13 +15,16 @@ class HospitalEmployee {
     takeVacationDays(daysOff) {
       this._remainingVacationDays -= daysOff;
     }
-}
-class Nurse extends HospitalEmployee {
-    constructor(name, certifications) {
-        super(name);
-        this._certifications = certifications;
-    }
-}
-const nurseOlynyk = new Nurse('Olynyk', ['Trauma', 'Pediatrics']);
-console.log(nurseOlynyk);
+  }
   
+  class Nurse extends HospitalEmployee {
+   constructor(name, certifications) {
+     super(name);
+     this._certifications = certifications;
+   } 
+}
+const nurseOlynyk = new Nurse('Olynyk', ['Trauma','Pediatrics']);
+console.log(nurseOlynyk);
+nurseOlynyk.takeVacationDays(5);
+console.log(nurseOlynyk.remainingVacationDays);
+console.log(nurseOlynyk);
