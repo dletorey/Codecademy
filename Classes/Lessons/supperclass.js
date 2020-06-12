@@ -10,6 +10,6 @@ class HospitalEmployee {
       return this._remainingVacationDays;
     }
     takeVacationDays(daysOff) {
-      this._remainingVacationDays = this._remainingVacationDays - daysOff;
+      this._remainingVacationDays -= daysOff;
     }
 }
