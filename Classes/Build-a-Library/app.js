@@ -57,16 +57,12 @@ class Movie extends Media {
 }
 
 const historyOfEverything = new Book('A Short History of Nearly Everything', 'Bill Bryson', 544);
-console.log(historyOfEverything);
-console.log(historyOfEverything.title);
-console.log(historyOfEverything.author);
-console.log(historyOfEverything.pages);
 historyOfEverything.toggleCheckOutStatus();
-console.log(historyOfEverything);
-console.log(historyOfEverything.isCheckedOut);
 historyOfEverything.addRating(3);
 historyOfEverything.addRating(4);
 historyOfEverything.addRating(5);
-console.log(historyOfEverything);
-console.log(historyOfEverything.getAverageRating());
-console.log(historyOfEverything);
+
+const speed = new Movie ('Speed', 'Jan de Bont', 116);
+speed.toggleCheckOutStatus();
+console.log(speed);
+console.log(speed.isCheckedOut);
