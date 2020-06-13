@@ -40,6 +40,9 @@ const MessageMixer = {
             string = this.replaceAllOccurrences(string, key, replacementObject[key]); 
         }	
         return string;
+    },
+    palindrome: function(string) {
+        return `${string} ${this.reverseWord(string)}`;
     }
 }; 
 module.exports = MessageMixer;
