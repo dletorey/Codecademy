@@ -53,4 +53,4 @@ const MessageMixer = {
         return arr.join(character);
     }
 }; 
-module.exports = MessageMixer;
+export default MessageMixer;
