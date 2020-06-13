@@ -42,3 +42,4 @@ const MessageMixer = {
         return string;
     }
 }; 
+module.exports = MessageMixer;
