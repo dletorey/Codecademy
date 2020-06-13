@@ -43,6 +43,14 @@ const MessageMixer = {
     },
     palindrome: function(string) {
         return `${string} ${this.reverseWord(string)}`;
+    },
+    pigLatin: function(sentence, character) {
+        let arr = sentence.split(" ");
+        let sentArr = [];  
+        for (let i = 0; i < arr.length; i++) {  
+            sentArr.push(arr[i]);
+        }
+        return arr.join(character);
     }
 }; 
 module.exports = MessageMixer;
