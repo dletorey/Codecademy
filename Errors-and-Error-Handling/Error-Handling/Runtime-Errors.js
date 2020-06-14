@@ -5,6 +5,6 @@ function throwError () {
 }
 
 // Call throwError() below:
-
+throwError();
 
 console.log('Because of the error, this will not printed!');
