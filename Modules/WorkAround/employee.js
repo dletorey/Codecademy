@@ -1,3 +1,7 @@
+let Employee = {
+    
+};
+
 let salary = 100000;
 
 let payGrades = {
