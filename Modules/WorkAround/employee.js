@@ -34,15 +34,15 @@ let Employee = {
 };
 
 let getCadre = () => {
-    if (salary >= payGrades.entryLevel.minSalary && salary <= payGrades.entryLevel.maxSalary) {
+    if (Employee.salary >= payGrades.entryLevel.minSalary && Employee.salary <= payGrades.entryLevel.maxSalary) {
         return 'entryLevel';
-    } else if (salary >= payGrades.midLevel.minSalary && salary <= payGrades.midLevel.maxSalary) {
+    } else if (Employee.salary >= payGrades.midLevel.minSalary && Employee.salary <= payGrades.midLevel.maxSalary) {
         return 'midLevel';
     } else return 'seniorLevel';
 };
 
 let calculateTax = () => {
-    return payGrades[getCadre()].taxMultiplier * salary;    
+    return payGrades[getCadre()].taxMultiplier * Employee.salary;    
 };
 
 let getBenefits = () => {
@@ -50,7 +50,7 @@ let getBenefits = () => {
 };
 
 let calculateBonus = () => {
-    return .02 * salary;
+    return .02 * Employee.salary;
 };
 
 let reimbursementEligibility = () => {
