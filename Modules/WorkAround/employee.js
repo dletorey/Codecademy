@@ -1,3 +1,4 @@
+/* ** refactoring to use aliases **
 let Employee = {
     salary: 100000,
     getCadre: function() {
@@ -25,6 +26,41 @@ let Employee = {
         }
         return totalBenefitsValue;
     }
+};
+*/
+
+let Employee = {
+    salary: 100000
+};
+
+let getCadre = () => {
+    if (salary >= payGrades.entryLevel.minSalary && salary <= payGrades.entryLevel.maxSalary) {
+        return 'entryLevel';
+    } else if (salary >= payGrades.midLevel.minSalary && salary <= payGrades.midLevel.maxSalary) {
+        return 'midLevel';
+    } else return 'seniorLevel';
+};
+
+let calculateTax = () => {
+    return payGrades[getCadre()].taxMultiplier * salary;    
+};
+
+let getBenefits = () => {
+    return payGrades[getCadre()].benefits.join(', ');
+};
+
+let calculateBonus = () => {
+    return .02 * salary;
+};
+
+let reimbursementEligibility = () => {
+    let reimbursementCosts = { health: 5000, housing: 8000, wellness: 6000, gym: 12000 };
+    let totalBenefitsValue = 0; 
+    let employeeBenefits = payGrades[getCadre()].benefits;
+    for (let i = 0; i < employeeBenefits.length; i++) {
+        totalBenefitsValue += reimbursementCosts[employeeBenefits[i]];
+    }
+    return totalBenefitsValue;
 };
 
 let payGrades = {
