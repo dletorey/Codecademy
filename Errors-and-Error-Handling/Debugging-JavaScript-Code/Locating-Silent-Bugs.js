@@ -1,7 +1,7 @@
 function capitalizeASingleWord(word) {
   
-    if (!word.match(' ')) {
-      
+    if (word.match(' ')) {
+      // console.log('Word value inside of if statement: ' + word);
       return null;
     }
     
