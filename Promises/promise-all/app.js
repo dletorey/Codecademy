@@ -13,3 +13,9 @@ const onReject = (rejectionReason) => {
 };
 
 // Write your code below:
+let checkSunglasses = checkAvailability('sunglasses', 'Favourite Supply Co.');
+let checkPants = checkAvailability('pants', 'Favourite Supply Co.');
+let checkBags = checkAvailability('bags', 'Favourite Supply Co.');
+Promise.all([checkSunglasses, checkPants, checkBags])
+    .then(onFulfill)
+    .catch(onReject);
