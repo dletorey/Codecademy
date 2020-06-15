@@ -1,11 +1,10 @@
 console.log("This is the first line of code in app.js.");
 // Keep the line above as the first line of code
 // Write your code here:
-
-
-
-
-
+const usingSTO = () => {
+    console.log('this is what I have to say…')
+};
+setTimeout(usingSTO, 2500);
 
 
 // Keep the line below as the last line of code:
