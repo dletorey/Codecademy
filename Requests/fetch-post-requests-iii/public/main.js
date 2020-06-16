@@ -30,7 +30,9 @@ const shortenUrl = () => {
     }, networkError => {
         console.log(networkError.message);
     }
-    ) 
+    ).then(jsonResponse => {
+        renderRawResponse(jsonResponse);
+    }) 
 }
 
 // Clear page and call AJAX functions
