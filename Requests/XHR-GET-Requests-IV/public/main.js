@@ -1,6 +1,11 @@
+/* lesson URL
+https://www.codecademy.com/paths/web-development/tracks/webdev-intermediate-javascript/modules/intermediate-javascript-requests/lessons/requests-i/exercises/xhr-get-request-iv
+*/
+
 // Information to reach API
 const url = 'https://api.datamuse.com/words?';
 const queryParams = 'rel_rhy=';
+const additionalParams = '&topics=';
 
 // Selecting page elements
 const inputField = document.querySelector('#input');
