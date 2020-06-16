@@ -16,7 +16,8 @@ const responseField = document.querySelector('#responseField');
 // AJAX function
 const getSuggestions = () => {
   const wordQuery = inputField.value;
-  const endpoint = `${url}${queryParams}${wordQuery}`;
+  const topicQuery = topicField.value;
+  const endpoint = `${url}${queryParams}${wordQuery}${additionalParams}${topicQuery}`;
   
   const xhr = new XMLHttpRequest();
   xhr.responseType = 'json';
