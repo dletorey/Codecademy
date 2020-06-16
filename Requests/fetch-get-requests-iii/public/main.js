@@ -21,7 +21,9 @@ const getSuggestions = () => {
            return response.json();
         } throw new Error('Request failed!');
     }, networkError => console.log(networkError.message)
-    ) 
+    ).then(jsonResponse => {
+        renderRawResponse(jsonResponse);
+    }) 
 }
 
 // Clears previous results and display results to webpage
