@@ -1,5 +1,6 @@
 /* lesson URL
 https://www.codecademy.com/paths/web-development/tracks/webdev-intermediate-javascript/modules/intermediate-javascript-requests/lessons/requests-ii/exercises/fetch-post-requests-iii
+https://www.codecademy.com/paths/web-development/tracks/webdev-intermediate-javascript/modules/intermediate-javascript-requests/lessons/requests-ii/exercises/fetch-post-requests-iv
 */
 
 // Information to reach API
@@ -22,7 +23,14 @@ const shortenUrl = () => {
             'apikey': apiKey
         },
         body: data
-    }) 
+    }).then(response => {
+        if (response.ok) {
+            return response.json();
+        } throw new Error('Request failed!');
+    }, networkError => {
+        console.log(networkError.message);
+    }
+    ) 
 }
 
 // Clear page and call AJAX functions
