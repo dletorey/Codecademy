@@ -9,9 +9,18 @@ echo "do you need to make a change to the version (enter "1" for yes, "0" for no
 read versioncontinue
 if [ $versioncontinue -eq 1 ]
 then
-  echo "OK"
+  for filename in source/*
+  do
+    # echo $filename
+    if [ $filename == "source/secretinfo.md" ]
+    then
+      echo "Not copying " $filename
+    else
+      echo "Copying " $filename
+    fi
+  done
 else
   echo "Please come back when you are ready"
 fi
-echo $versioncontinue
+# echo $versioncontinue
 # project url https://www.codecademy.com/paths/web-development/tracks/learn-the-command-line/modules/bash-scripting/projects/bash-scripting-p
