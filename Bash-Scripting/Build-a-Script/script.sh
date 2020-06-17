@@ -17,10 +17,15 @@ then
       echo "Not copying " $filename
     else
       echo "Copying " $filename
+      cp $filename build/.
     fi
   done
 else
   echo "Please come back when you are ready"
 fi
+cd build
+echo "Build version $version contains:"
+ls
+cd ..
 # echo $versioncontinue
 # project url https://www.codecademy.com/paths/web-development/tracks/learn-the-command-line/modules/bash-scripting/projects/bash-scripting-p
