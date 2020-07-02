@@ -19,3 +19,11 @@ const blog = (
         </article>
     </div>
 );
+
+const myList = (
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul>
+);
