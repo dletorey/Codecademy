@@ -239,6 +239,7 @@ const peopleLis = people.map(person =>
 ReactDOM.render(<ul>{peopleLis}</ul>, document.getElementById('app'));
 */
 /* Workshop - Keys */
+/*
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -251,3 +252,14 @@ const peopleLis = people.map((person, i) =>
 
 // ReactDOM.render goes here:
 ReactDOM.render(<ul>{peopleLis}</ul>, document.getElementById('app'));
+*/
+
+/* Workshop - React.createElement */
+/* Example to create
+const greatestDivEver = <div>i am div</div>;
+*/
+const greatestDivEver = React.createElement(
+  "div",
+  null,
+  "i am div"
+);
