@@ -90,7 +90,7 @@ const gooseImg = <img src={goose} />;
 ReactDOM.render(gooseImg,document.getElementById('app'));
 */
 
-/* Workshop - Event Listeners in JSX */
+/* Workshop - Event Listeners in JSX 
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -108,3 +108,53 @@ const kitty = (
 );
 
 ReactDOM.render(kitty, document.getElementById('app'));
+*/
+/* Workshop - JSX Conditionals: If Statements That Do Work */
+/* Example in if.js */
+/*
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+let message;
+
+if (user.age >= drinkingAge) {
+  message = (
+    <h1>
+      Hey, check out this alcoholic beverage!
+    </h1>
+  );
+} else {
+  message = (
+    <h1>
+      Hey, check out these earrings I got at Claire's!
+    </h1>
+  );
+}
+
+ReactDOM.render(
+  message, 
+  document.getElementById('app')
+);
+*/
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+function coinToss() {
+  // This function will randomly return either 'heads' or 'tails'.
+  return Math.random() < 0.5 ? 'heads' : 'tails';
+}
+
+const pics = {
+  kitty: 'https://s3.amazonaws.com/codecademy-content/courses/React/react_photo-kitty.jpg',
+  doggy: 'https://s3.amazonaws.com/codecademy-content/courses/React/react_photo-puppy.jpeg'
+};
+let img;
+
+// if/else statement begins here:
+if (coinToss() === "heads") {
+  img = <img src={pics.kitty} alt="cat" />
+} else {
+  img = <img src={pics.doggy} alt="dog" />
+}
+ReactDOM.render(img, document.getElementById('app'));
