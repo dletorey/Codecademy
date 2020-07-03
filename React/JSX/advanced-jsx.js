@@ -71,10 +71,20 @@ import ReactDOM from 'react-dom';
 const math = <h1>2 + 3 = {2 + 3}</h1>;
 ReactDOM.render(math, document.getElementById('app'));
 */
-/* Workshop - Variables in JSX */
+/* Workshop - Variables in JSX 
 import React from 'react';
 import ReactDOM from 'react-dom';
 
 const theBestString = 'tralalalala i am da best';
 
 ReactDOM.render(<h1>{theBestString}</h1>, document.getElementById('app'));
+*/
+/* Workshop - Variable Attributes in JSX */
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const goose = 'https://s3.amazonaws.com/codecademy-content/courses/React/react_photo-goose.jpg';
+
+// Declare new variable here:
+const gooseImg = <img src={goose} />;
+ReactDOM.render(gooseImg,document.getElementById('app'));
