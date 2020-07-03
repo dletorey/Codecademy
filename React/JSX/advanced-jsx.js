@@ -7,7 +7,7 @@ import ReactDOM from 'react-dom';
 const myDiv = <div className="big">I AM A BIG DIV</div>;
 ReactDOM.render(myDiv, document.getElementById('app'))
 */
-/* Workshop - Self-Closing Tags */
+/* Workshop - Self-Closing Tags 
 const profile = (
     <div>
       <h1>I AM JENKINS</h1>
@@ -21,3 +21,13 @@ const profile = (
       </article>
     </div>
   );
+*/
+/* Workshop - JavaScript In Your JSX In Your JavaScript */
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+// Write code here:
+ReactDOM.render(
+  <h1>2 + 3</h1>,
+  document.getElementById('app')
+);
