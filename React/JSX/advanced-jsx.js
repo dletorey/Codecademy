@@ -224,7 +224,7 @@ const listItems = strings.map(string => <li>{string}</li>);
 
 <ul>{listItems}</ul>
 */
-
+/*
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -233,6 +233,20 @@ const people = ['Rowe', 'Prevost', 'Gare'];
 const peopleLis = people.map(person =>
   // expression goes here:
 <li>{person}</li>
+);
+
+// ReactDOM.render goes here:
+ReactDOM.render(<ul>{peopleLis}</ul>, document.getElementById('app'));
+*/
+/* Workshop - Keys */
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const people = ['Rowe', 'Prevost', 'Gare'];
+
+const peopleLis = people.map((person, i) =>
+  // expression goes here:
+<li key={'person_' + i}>{person}</li>
 );
 
 // ReactDOM.render goes here:
