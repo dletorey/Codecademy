@@ -192,6 +192,7 @@ const tasty = (
   </ul>
 );
 */
+/*
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -214,3 +215,25 @@ ReactDOM.render(
 	favoriteFoods, 
 	document.getElementById('app')
 );
+*/
+/* Workshop - .map in JSX */
+/* Example 
+const strings = ['Home', 'Shop', 'About Me'];
+
+const listItems = strings.map(string => <li>{string}</li>);
+
+<ul>{listItems}</ul>
+*/
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const people = ['Rowe', 'Prevost', 'Gare'];
+
+const peopleLis = people.map(person =>
+  // expression goes here:
+<li>{person}</li>
+);
+
+// ReactDOM.render goes here:
+ReactDOM.render(<ul>{peopleLis}</ul>, document.getElementById('app'));
