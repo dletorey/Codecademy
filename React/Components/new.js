@@ -6,3 +6,8 @@ class MyComponentClass extends React.Component {
         return <h1>Hello world</h1>;
     }
 }
+
+ReactDOM.render(
+    <MyComponentClass />, 
+    document.getElementById('app')
+);
