@@ -91,3 +91,15 @@ import ReactDOM from 'react-dom';
 const fiftyFifty = Math.random() < 0.5;
 
 // New component class starts here:
+class TonightsPlan extends React.Component {
+    render() {
+        let action;
+        if (!fiftyFifty) {
+            action = "out"
+        } else {
+            action = "to bed"
+        }
+    return <h1>Tonight I'm going {action} WOOO</h1>
+    }
+}
+ReactDOM.render(<TonightsPlan />, document.getElementById('app'));
