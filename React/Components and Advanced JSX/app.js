@@ -111,10 +111,12 @@ import ReactDOM from 'react-dom';
 
 class MyName extends React.Component {
 	// name property goes here:
-
+    get name() {
+        return 'Dave Letorey';
+    }
 
   render() {
-    return <h1></h1>;
+  return <h1>My name is {this.name}.</h1>;
   }
 }
 
