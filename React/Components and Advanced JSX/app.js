@@ -106,6 +106,7 @@ class TonightsPlan extends React.Component {
 ReactDOM.render(<TonightsPlan />, document.getElementById('app'));
 */
 /* Workshop - Use this in a Component */
+/*
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -121,3 +122,18 @@ class MyName extends React.Component {
 }
 
 ReactDOM.render(<MyName />, document.getElementById('app'));
+*/
+/* Workshop - Use an Event Listener in a Component */
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+class Button extends React.Component {
+  scream() {
+    alert('AAAAAAAAHHH!!!!!');
+  }
+
+  render() {
+    return <button onClick={this.scream}>AAAAAH!</button>;
+  }
+}
+ReactDOM.render(<Button />, document.getElementById('app'));
