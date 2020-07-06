@@ -51,6 +51,7 @@ class Owl extends React.Component {
 ReactDOM.render(<Owl />, document.getElementById('app'));
 */
 /* Workshop - Put Logic in a Render Function */
+/*
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -82,3 +83,25 @@ class Friend extends React.Component {
     }
 }
 ReactDOM.render(<Friend />,document.getElementById('app'));
+*/
+/* Workshop - Use a Conditional in a Render Function */
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+class TodaysPlan extends React.Component {
+  render() {
+    let task;
+    if (!apocalypse) {
+      task = 'learn React.js'
+    } else {
+      task = 'run around'
+    }
+
+    return <h1>Today I am going to {task}!</h1>;
+  }
+}
+
+ReactDOM.render(
+	<TodaysPlan />,
+	document.getElementById('app')
+);
