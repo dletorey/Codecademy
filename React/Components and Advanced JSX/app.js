@@ -85,6 +85,7 @@ class Friend extends React.Component {
 ReactDOM.render(<Friend />,document.getElementById('app'));
 */
 /* Workshop - Use a Conditional in a Render Function */
+/*
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -103,3 +104,18 @@ class TonightsPlan extends React.Component {
     }
 }
 ReactDOM.render(<TonightsPlan />, document.getElementById('app'));
+*/
+/* Workshop - Use this in a Component */
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+class MyName extends React.Component {
+	// name property goes here:
+
+
+  render() {
+    return <h1></h1>;
+  }
+}
+
+ReactDOM.render(<MyName />, document.getElementById('app'));
