@@ -6,7 +6,11 @@ import SearchBar from '../SearchBar/SearchBar.js';
 
 function App() {
   return (
-    
+    <div className="App">
+      <h1>ravenous</h1>
+      <SearchBar />
+      <BusinessList /> 
+    </div>
   );
 }
 
