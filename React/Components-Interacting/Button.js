@@ -12,7 +12,9 @@ class Button extends React.Component {
 }
 
 // defaultProps goes here:
-
+Button.defaultProps = {
+  text: 'I am a button'
+};
 
 ReactDOM.render(
   <Button />, 
