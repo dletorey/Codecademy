@@ -1,4 +1,31 @@
+/* 11/13 - this.props.children */
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { List } from './List';
+
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <List type='Living Musician'>
+          <li>Sachiko M</li>
+          <li>Harvey Sid Fisher</li>
+        </List>
+        <List type='Living Cat Musician'>
+          <li>Nora the Piano Cat</li>
+        </List>
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(
+  <App />, 
+  document.getElementById('app')
+);
+
 /* 6/13 */
+/*
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Greeting } from './Greeting';
@@ -23,7 +50,7 @@ ReactDOM.render(
   <App />, 
   document.getElementById('app')
 );
-
+*/
 /* pre 6/13 */
 /*
 import React from 'react';
