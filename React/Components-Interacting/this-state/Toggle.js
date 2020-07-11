@@ -5,6 +5,10 @@ const green = '#39D1B4';
 const yellow = '#FFD712';
 
 class Toggle extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { color: green }
+    }
   render() {
     return (
       <div>
