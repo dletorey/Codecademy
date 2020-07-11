@@ -22,7 +22,7 @@ class Toggle extends React.Component {
         <h1>
           Change my color
         </h1>
-        <button>
+        <button onClick={this.changeColor}>
             Change color
         </button>
       </div>
