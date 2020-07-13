@@ -1,3 +1,6 @@
+/* Child Components Update their Parents' State */
+
+/* 
 import React from 'react';
 
 export class Child extends React.Component {
@@ -5,3 +8,4 @@ export class Child extends React.Component {
         return <h1>Hey, my name is {this.props.name}!</h1>;
     }
 };
+*/
