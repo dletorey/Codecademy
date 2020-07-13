@@ -8,7 +8,7 @@ export class Child extends React.Component {
         <h1>
           Hey my name is {this.props.name}!
         </h1>
-        <select id="great-names">
+        <select id="great-names" onChange={this.props.onChange}>
           <option value="Frarthur">
             Frarthur
           </option>
