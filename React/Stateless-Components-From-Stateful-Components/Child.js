@@ -2,7 +2,11 @@
 import React from 'react';
 
 export class Child extends React.Component {
-  render() {
+    handleChange(e) {
+        const name = e.target.value;
+        this.props.onChange(name);
+    }
+    render() {
     return (
       <div>
         <h1>
