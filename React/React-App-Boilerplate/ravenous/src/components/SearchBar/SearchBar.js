@@ -38,8 +38,8 @@ class SearchBar extends React.Component {
             location: event.target.value
         });
     }
-    handleSearch() {
-        
+    handleSearch(event) {
+        this.props.searchYelp(this.state.term,this.state.location,this.state.sortBy)
     }
     renderSortByOptions() {
         return Object.keys(this.sortByOptions).map(sortByOption => {
