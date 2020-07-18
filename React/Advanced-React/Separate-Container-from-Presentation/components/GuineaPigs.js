@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 const GUINEAPATHS = [
   'https://s3.amazonaws.com/codecademy-content/courses/React/react_photo-guineapig-1.jpg',
@@ -8,7 +7,7 @@ const GUINEAPATHS = [
   'https://s3.amazonaws.com/codecademy-content/courses/React/react_photo-guineapig-4.jpg'
 ];
 
-class GuineaPigs extends React.Component {
+export class GuineaPigs extends React.Component {
   constructor(props) {
     super(props);
 
