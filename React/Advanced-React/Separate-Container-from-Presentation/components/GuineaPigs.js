@@ -42,8 +42,3 @@ export class GuineaPigs extends React.Component {
     );
   }
 }
-
-ReactDOM.render(
-  <GuineaPigs />,
-  document.getElementById('app')
-);
