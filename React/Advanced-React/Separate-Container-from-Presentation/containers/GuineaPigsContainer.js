@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { GuineaPigs } from '../components/GuineaPigs';
 
 const GUINEAPATHS = [
   'https://s3.amazonaws.com/codecademy-content/courses/React/react_photo-guineapig-1.jpg',
