@@ -36,7 +36,7 @@ class GuineaPigsContainer extends React.Component {
 
   render() {
     const src = GUINEAPATHS[this.state.currentGP];
-    return <GuineaPigs />;
+    return <GuineaPigs src={src} />;
   }
 }
 
