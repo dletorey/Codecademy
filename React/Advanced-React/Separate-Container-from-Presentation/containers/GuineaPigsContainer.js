@@ -9,7 +9,7 @@ const GUINEAPATHS = [
   'https://s3.amazonaws.com/codecademy-content/courses/React/react_photo-guineapig-4.jpg'
 ];
 
-class GuineaPigs extends React.Component {
+class GuineaPigsContainer extends React.Component {
   constructor(props) {
     super(props);
 
@@ -46,6 +46,6 @@ class GuineaPigs extends React.Component {
 }
 
 ReactDOM.render(
-  <GuineaPigs />,
+  <GuineaPigsContainer />,
   document.getElementById('app')
 );
