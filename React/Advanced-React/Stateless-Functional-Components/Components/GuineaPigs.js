@@ -1,5 +1,6 @@
 import React from 'react';
 
+/*
 export class GuineaPigs extends React.Component {
   render() {
     const src = this.props.src;
@@ -10,4 +11,13 @@ export class GuineaPigs extends React.Component {
       </div>
     );
   }
+} 
+*/
+export const GuineaPigs = (props) => {
+    return (
+        <div>
+            <h1>Cute Guinea Pigs</h1>
+            <img src={props.src} />
+        </div>
+    )
 }
