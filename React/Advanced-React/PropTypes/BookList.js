@@ -27,3 +27,4 @@ export class BookList extends React.Component {
     );
   }
 }
+ReactDOM.render(<BookList />, document.getElementById('app'));
