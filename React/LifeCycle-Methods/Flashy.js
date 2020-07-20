@@ -2,9 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 export class Flashy extends React.Component {
+    componentWillMount() {
+        alert('AND NOW, FOR THE FIRST TIME EVER...  FLASHY!!!!');
+    }
   render() {
-
-  	alert('AND NOW, FOR THE FIRST TIME EVER...  FLASHY!!!!');
 
     alert('Flashy is rendering!');
     
@@ -21,11 +22,10 @@ ReactDOM.render(
   document.getElementById('app')
 );
 
-/*
+
 setTimeout(() => {
   ReactDOM.render(
     <Flashy color='green' />,
     document.getElementById('app')
   );
 }, 2000);
-*/
