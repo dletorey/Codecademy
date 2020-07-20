@@ -5,7 +5,7 @@ export class Input extends React.Component {
   render() {
     return (
       <div>
-        <input type="text" />
+        <input type="text" onChange={this.handleUserInput} />
         <h1>I am an h1.</h1>
       </div>
     );
