@@ -15,6 +15,10 @@ export class TopNumber extends React.Component {
       }
   }
 
+  componentWillUpdate(nextProps, nextState) {
+      
+  }
+
   render() {
     return (
       <h1>
