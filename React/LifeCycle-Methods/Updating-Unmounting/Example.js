@@ -1,4 +1,18 @@
+/* componentDidUpdate */
+import React from 'react';
+
+export class Example extends React.component {
+  componentDidUpdate(prevProps, prevState) {
+    alert('Component is done rendering!');
+  }
+
+  render() {
+    return <h1>Hello world</h1>;
+  }
+}
+
 /* componentWillUpdate */
+/*
 import React from 'react';
 
 export class Example extends React.Component {
@@ -10,7 +24,7 @@ export class Example extends React.Component {
     return <h1>Hello world</h1>;
   }
 }
-
+*/
 /* shouldComponentUpdate */
 /*
 import React from 'react';
