@@ -15,8 +15,8 @@ export class Input extends React.Component {
   render() {
     return (
       <div>
-        <input type="text" onChange={this.handleUserInput} />
-        <h1>I am an h1.</h1>
+        <input type="text" onChange={this.handleUserInput} value={this.state.userInput} />
+        <h1>{this.state.userInput}</h1>
       </div>
     );
   }
