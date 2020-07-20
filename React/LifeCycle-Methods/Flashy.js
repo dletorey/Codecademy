@@ -5,11 +5,12 @@ export class Flashy extends React.Component {
     componentWillMount() {
         alert('AND NOW, FOR THE FIRST TIME EVER...  FLASHY!!!!');
     }
+    componentDidMount() {
+        alert('YOU JUST WITNESSED THE DEBUT OF...  FLASHY!!!!!!!');
+    }
   render() {
 
     alert('Flashy is rendering!');
-
-    alert('YOU JUST WITNESSED THE DEBUT OF...  FLASHY!!!!!!!');
     
     return (
       <h1 style={{ color: this.props.color }}>
