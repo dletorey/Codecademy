@@ -1,4 +1,18 @@
+/* componentWillUpdate */
+import React from 'react';
+
+export class Example extends React.Component {
+  componentWillUpdate(nextProps, nextState) {
+    alert('Component is about to update!  Any second now!');
+  }
+
+  render() {
+    return <h1>Hello world</h1>;
+  }
+}
+
 /* shouldComponentUpdate */
+/*
 import React from 'react';
 
 export class Example extends React.Component {
@@ -28,7 +42,7 @@ export class Example extends React.Component {
     );
   }
 }
-
+*/
 /*
 import React from 'react';
 

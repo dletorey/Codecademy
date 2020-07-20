@@ -2,6 +2,9 @@ import React from 'react';
 import { random } from './helpers';
 
 export class Target extends React.Component {
+  shouldComponentUpdate(nextProps, nextState) {
+    return this.props.number != nextProps.number;
+  }
   render() {
     let visibility = this.props.number ? 'visible' : 'hidden';
     let style = {
