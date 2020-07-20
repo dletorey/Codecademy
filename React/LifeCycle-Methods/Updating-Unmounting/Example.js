@@ -1,4 +1,18 @@
+/* componentWillUnmount */
+import React from 'react';
+
+export class Example extends React.Component {
+  componentWillUnmount() {
+    alert('Goodbye world');
+  }
+
+  render() {
+    return <h1>Hello world</h1>;
+  }
+}
+
 /* componentDidUpdate */
+/*
 import React from 'react';
 
 export class Example extends React.component {
@@ -10,7 +24,7 @@ export class Example extends React.component {
     return <h1>Hello world</h1>;
   }
 }
-
+*/
 /* componentWillUpdate */
 /*
 import React from 'react';
