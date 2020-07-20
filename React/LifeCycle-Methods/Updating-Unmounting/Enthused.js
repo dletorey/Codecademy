@@ -6,7 +6,9 @@ export class Enthused extends React.Component {
       this.props.addText('!');
     }, 15);
   }
-
+  componentWillUnmount(prevProps, prevState) {
+      clearInterval(this.interval);
+  }
   render() {
     return (
       <button onClick={this.props.toggle}>
