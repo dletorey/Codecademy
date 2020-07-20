@@ -18,7 +18,7 @@ export class TopNumber extends React.Component {
   render() {
     return (
       <h1>
-        Top Number: {this.props.number}
+        Top Number: {this.state.highest}
       </h1>
     );
   }
