@@ -8,6 +8,8 @@ export class Flashy extends React.Component {
   render() {
 
     alert('Flashy is rendering!');
+
+    alert('YOU JUST WITNESSED THE DEBUT OF...  FLASHY!!!!!!!');
     
     return (
       <h1 style={{ color: this.props.color }}>
