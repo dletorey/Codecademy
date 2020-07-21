@@ -14,6 +14,9 @@ const Spotify = {
             window.setTimeout(() => usersAccessToken = '', expiresIn * 1000);
             window.history.pushState('Access Token', null, '/');
             return usersAccessToken;
+        } else {
+            const accessUrl = `https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=token&scope=playlist-modify-public&redirect_uri=${redirectURI}`;
+            window.location = accessUrl;
         }
     }
 };
