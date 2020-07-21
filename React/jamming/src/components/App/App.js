@@ -28,6 +28,27 @@ class App extends React.Component {
                     album: 'dubnobasswithmyheadman',
                     id: 789
                 }
+            ],
+            playlistName: 'Dave\'s Playlist',
+            playlistTracks: [
+                {
+                    name: 'Remind',
+                    artist: 'Orbital',
+                    album: 'Brown',
+                    id: 111
+                },
+                {
+                    name: 'Song of Life',
+                    artist: 'Leftfield',
+                    album: 'Leftism',
+                    id: 222
+                },
+                {
+                    name: 'Cowgirl',
+                    artist: 'Underworld',
+                    album: 'dubnobasswithmyheadman',
+                    id: 333
+                }
             ]
         };
     }
