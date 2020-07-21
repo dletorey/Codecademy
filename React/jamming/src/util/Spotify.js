@@ -1,4 +1,4 @@
-const usersAccessToken = {};
+let usersAccessToken;
 const Spotify = {
 
 };
