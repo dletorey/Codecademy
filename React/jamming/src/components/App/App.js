@@ -14,19 +14,19 @@ class App extends React.Component {
                     name: 'Chime',
                     artist: 'Orbital',
                     album: 'Green',
-                    id: '123'
+                    id: 123
                 },
                 {
                     name: 'Open Up',
                     artist: 'Leftfield',
                     album: 'Leftism',
-                    id: '456'
+                    id: 456
                 },
                 {
                     name: 'Mmmmmm Skyscraper',
                     artist: 'Underworld',
                     album: 'dubnobasswithmyheadman',
-                    id: '789'
+                    id: 789
                 }
             ]
         };
