@@ -1,7 +1,5 @@
-import SearchBar from "../components/SearchBar/SearchBar";
-
 const clientId = '96697afbf42141368bfb62a1d85c31bd';
-const redirectURI = 'http://localhost:3000/'
+const redirectURI = 'http://dletorey-1st-react.surge.sh/'
 let usersAccessToken;
 const Spotify = {
     getAccessToken() {
